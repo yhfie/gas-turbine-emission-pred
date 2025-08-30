@@ -46,7 +46,7 @@ for col, desc in zip(input_cols[5:9], input_desc[5:9]):
 
 df_inputs = pd.DataFrame(inputs, columns=input_cols, index=[0])
 
-df_inputs
+# df_inputs
 
 submit = st.button("Prediksi")
 
