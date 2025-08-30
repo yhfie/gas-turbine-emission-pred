@@ -3,6 +3,8 @@ import streamlit as st
 import pandas as pd
 # import sklearn
 
+st.set_page_config(page_title="Prediksi Emisi Gas Karbon Monoksida Turbin")
+
 input_cols = ['AT', 'AP', 'AH', 'AFDP', 'GTEP', 'TIT', 'TAT', 'TEY', 'CDP']
 input_desc = [
       'Suhu Sekitar (◦C)',
