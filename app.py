@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
-import sklearn
+# import sklearn
 
 input_cols = ['AT', 'AP', 'AH', 'AFDP', 'GTEP', 'TIT', 'TAT', 'TEY', 'CDP']
 input_desc = [
@@ -18,7 +18,7 @@ input_desc = [
 
 cols_stats = pd.read_csv('csv/cols_stats.csv', index_col=0)
 
-model = joblib.load('model/model_RFR_local.pkl')
+model = joblib.load('model/model_RFR_local_compressed.pkl')
 
 st.header("Prediksi Emisi Gas Karbon Monoksida Turbin")
 
